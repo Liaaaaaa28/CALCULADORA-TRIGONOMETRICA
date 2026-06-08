@@ -10,15 +10,17 @@ Scanner Scanner = new Scanner(System.in); // Scanner para obtener la funcion que
 int opcion = -1;
 
 while (opcion != 0) {
+System.out.println("------------------------------------------------------------------------");
+System.out.println("Escoja la funcion que desea calcular: ");
+System.out.println("------------------------------------------------------------------------");
 
-System.out.println("escoja la funcion que desea calcular: ");
-
-System.out.println("1. sin \n2. cos \n3. tan \n4. arcsin \n5. arcos \n6. arctan \n7. sinh \n8. cosh \n9. tanh \n0. salir");
+System.out.println("1. sin \n2. cos \n3. tan \n4. arcsin \n5. arcos \n6. arctan \n7. sinh \n8. cosh \n9. tanh \n0. Salir");
+System.out.println("------------------------------------------------------------------------");
 
 opcion = Scanner.nextInt();
 
 //_______________________________________________________________________________________________________________________
-// calcular el sin de un angulo 
+// Calcular el sin de un angulo 
 if (opcion == 1) {;
     System.out.println("Ingrese el angulo en radianes: ");
     double angulo = Scanner.nextDouble();
@@ -27,7 +29,7 @@ if (opcion == 1) {;
   
 }
 //_______________________________________________________________________________________________________________________
-//calcular el cos de un angulo
+//Calcular el cos de un angulo
 else if (opcion == 2) {
     System.out.println("Ingrese el angulo en radianes: ");
     double angulo = Scanner.nextDouble();
@@ -35,12 +37,42 @@ else if (opcion == 2) {
     System.out.println("El resultado de cos(" + angulo + ") es: " +resultado );
 }
 //_______________________________________________________________________________________________________________________
-// calcular la tan de un angulo
+// Calcular la can de un angulo
 else if (opcion == 3) {
     System.out.println("Ingrese el angulo en radianes: ");
     double angulo =Scanner.nextDouble();
     double resultado =Math.tan(angulo);
     System.out.println("El resultado de tan("+ angulo + ") es: " + resultado);
+    
+}
+//_______________________________________________________________________________________________________________________
+
+// Calcular el Arcoseno de un angulo.
+else if (opcion == 4) {
+    System.out.println("Ingrese el angulo en radianes: ");
+    double angulo =Scanner.nextDouble();
+    double resultado =Math.asin(angulo);
+    System.out.println("El resultado del Arcoseno("+ angulo + ") es: " + resultado);
+    
+}
+//_______________________________________________________________________________________________________________________
+
+// Calcular el Arcocoseno de un angulo.
+else if (opcion == 5) {
+    System.out.println("Ingrese el angulo en radianes: ");
+    double angulo =Scanner.nextDouble();
+    double resultado =Math.acos(angulo);
+    System.out.println("El resultado del Arcocoseno("+ angulo + ") es: " + resultado);
+    
+}
+//_______________________________________________________________________________________________________________________
+
+// Calcular la Arcotangente de un angulo.
+else if (opcion == 6) {
+    System.out.println("Ingrese el angulo en radianes: ");
+    double angulo =Scanner.nextDouble();
+    double resultado =Math.atan(angulo);
+    System.out.println("El resultado de Arcotangente("+ angulo + ") es: " + resultado);
     
 }
 //_______________________________________________________________________________________________________________________
